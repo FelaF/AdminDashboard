@@ -1,0 +1,37 @@
+.Side-Navigation {
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+
+}
+.Side-Navigation p {
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 5px;
+}
+ul li {
+    padding: 5px;
+    font-size:1em;
+    font-family:'Times New Roman', Times, serif;
+}
+header {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+h1 {
+    font-size: 1.5rem;
+}
+
+.GridTop {
+    color: blue;
+    display:grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 100px 100px 100px 100px;
+}
+
