@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 2</title>
+    <style>
+        .container {
+            resize:both;
+            overflow:auto;
+            display:grid;
+            gap:4px;
+            padding:4px;
+            border: 1px solid green;
+            background-color: aquamarine;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(autofill, minmax(150px,1fr));
+
+        }
+        .grid-item {
+            background-color: #444;
+            text-align: center;
+            color: #ddd;
+            font-family: sans-serif;
+            font-size: 1.5rem;
+            padding: 12px;
+        }
+
+        p {
+        margin: 12px auto 24px;
+        }
+
+        img {
+        height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-item">
+            <p>Odin1</p>
+            <img src="TOPlogo.png" alt="top logo" />
+        </div>
+        <div class="grid-item">
+            <p>Odin2</p>
+            <img src="TOPlogo.png" alt="top logo" />
+        </div>
+        <div class="grid-item">
+            <p>Odin3</p>
+            <img src="TOPlogo.png" alt="top logo" />
+        </div>
+        <div class="grid-item">
+            <p>Odin4</p>
+            <img src="TOPlogo.png" alt="top logo" />
+        </div>
+        <div class="grid-item">
+            <p>Odin5</p>
+            <img src="TOPlogo.png" alt="top logo" />
+        </div>
+        <div class="grid-item">
+            <p>Odin6</p>
+            <img src="TOPlogo.png" alt="top logo" />
+        </div>
+        <div class="grid-item">
+            <p>Odin7</p>
+            <img src="TOPlogo.png" alt="top logo" />
+        </div>
+        <div class="grid-item">
+            <p>Odin8</p>
+            <img src="TOPlogo.png" alt="top logo" />
+        </div>
+        <div class="grid-item">
+            <p>Odin9</p>
+            <img src="TOPlogo.png" alt="top logo" />
+        </div>
+        <div class="grid-item">
+            <p>Odin10</p>
+            <img src="TOPlogo.png" alt="top logo" />
+</body>
+</html>

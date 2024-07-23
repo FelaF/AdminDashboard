@@ -1,18 +1,27 @@
+
+body {
+    margin:0px;
+}
 .Side-Navigation {
     display: flex;
     flex-direction: column;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 4;
+    background-color: aquamarine;
+    margin: 0px;
+    padding: 0px;
 
 
 }
 .Side-Navigation p {
-    margin-bottom: 5px;
+    margin: 10px;
+    padding: 5px;
 }
 
 ul {
     list-style-type: none;
-    padding-left: 5px;
+    padding: 0px;
+    background: aquamarine;
 }
 ul li {
     padding: 5px;
@@ -22,16 +31,20 @@ ul li {
 header {
     display: flex;
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 5;
 }
 h1 {
-    font-size: 1.5rem;
+    font-size: 1em;
 }
 
 .GridTop {
     color: blue;
     display:grid;
     grid-template-columns: 150px 150px 150px 150px;
-    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-rows: 150px 150px 150px 150px;
 }
 
+#Projects {
+    display:flex;
+    flex-wrap: wrap;
+}
