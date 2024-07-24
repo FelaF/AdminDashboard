@@ -1,40 +1,67 @@
-* {
-    margin: 0;
-    padding: 0;
+:root {
+    height:100vh;
+    margin: 0px;
+    padding: 0px
 }
 
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 250px 1fr 1fr;
+    grid-template-rows: 25% 25% 25% 25%;
+    margin:0px;
+    padding: 0px;
 }
 
 .sidebar{
     padding: 12px;
     display: grid;
+    background-color: green;
+    grid-row: 1 / span 5;
+    justify-content: stretch;
+    height: 800px;
+
 }
 
-.sidebar > div {
-    display: grid;
-    grid-template-rows:100px 1fr;
-}
-.sidebar > div > nav {
-    display: grid;
-    grid-auto-rows: 1fr;
-}
-.sidebar > div > nav > div{
-    display: grid;
-    grid-auto-rows: 50px;
-}
 .container {
     grid-column: 2 / span 4;
     display:grid;
-    grid-template-rows: 150px 1fr;
+    grid-template-columns: 150px 1fr 1fr 1fr;
     gap: 2.5em;
+    background-color: blue;
+
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px;
+}
+
+.main > div {
+    display:grid;
+    grid: 200px 200px / 200px 200px 200px;
+    gap: 1px;
 
 }
 
-.header {
-    padding: 1em 2em;
-    display: grid;
+.main > div > article {
+    border: 1px solid red;
+    
+}
+
+.sidebar nav {
+    grid-row:2 / span 4;
+}
+.sidebar > nav > div > div {
+    padding: 15px;
+    align-self: stretch;
+}
+
+.main > div > div {
+    grid-row: 1;
+    grid-column: 2 / span 3;
+}
+
+.container > .header > div{
+    grid-column: 3 / span 4;
 }
